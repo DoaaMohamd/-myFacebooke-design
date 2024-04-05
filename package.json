@@ -1,10 +1,12 @@
 {
   "name": "my-social",
   "version": "0.1.0",
-  "homepage": "https://DoaaMohamd.github.io/myFacebooke-design",
+  "homepage": "https://DoaaMohamd.github.io/DoaaSocial",
   "private": true,
-  "build":"chunkSizeWarningLimit:1000*1024" ,
+  
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "dev": "next dev",
     "build":"next build",
     "start": "next start",
