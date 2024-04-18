@@ -1,7 +1,7 @@
  
  'use client';
  
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes   } from "react-router-dom";
 import styles from "./Page.module.css";
 import Hom from "./pages/Hom/Hom";
 import Register from "./pages/Register/Register";
@@ -35,12 +35,13 @@ export default function Home() {
          
         
     <Routes>
+    
       <Route path="/Hom" element={<Hom />}/>
       <Route path="/" element={<Login/>}/>
       <Route path="/Register" element={<Register/>}/>
       <Route path="/Profile" element={<Profile/>}/>
 
-
+ 
     </Routes>
    
     </BrowserRouter> 
