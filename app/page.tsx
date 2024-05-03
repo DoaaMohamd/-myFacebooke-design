@@ -11,6 +11,7 @@ import Link from "next/link";
  
 
 export default function Home() {
+  if (typeof window !== 'undefined') {
   return (
       // <Router>
       //   <div className={styles.container}>
@@ -35,9 +36,9 @@ export default function Home() {
          
         
     <Routes>
-    
+    <Route path="/" element={<Login/>}/>
       <Route path="/Hom" element={<Hom />}/>
-      <Route path="/" element={<Login/>}/>
+     
       <Route path="/Register" element={<Register/>}/>
       <Route path="/Profile" element={<Profile/>}/>
 
@@ -46,8 +47,8 @@ export default function Home() {
    
     </BrowserRouter> 
     
-     
+ 
     
     
-  );
+  );     }
 }
